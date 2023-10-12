@@ -3,7 +3,7 @@ import Layout, { siteTitle } from "../components/layout";
 import Schedule from "../components/sections/schedule";
 import Comparison from "../components/sections/comparison";
 
-export default function Home({ allPostsData }) {
+export default function Home() {
   return (
     <Layout home>
       <Head>

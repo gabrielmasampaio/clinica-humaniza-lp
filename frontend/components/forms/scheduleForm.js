@@ -1,5 +1,4 @@
 import {Button, Input} from "@nextui-org/react";
-import {useMemo, useState} from "react";
 import PhoneInput from "../inputs/phoneInput";
 import EmailInput from "../inputs/emailInput";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
