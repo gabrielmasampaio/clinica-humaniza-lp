@@ -3,7 +3,7 @@ import { Image } from "@nextui-org/react";
 
 export const siteTitle = "Clínica Humaniza";
 
-export default function Layout({ children, home }) {
+export default function Layout({ children }) {
   return (
     <div className="bg-main-dark min-h-[100vh] text-white flex flex-col items-center px-5 text-justify">
       <Head>
