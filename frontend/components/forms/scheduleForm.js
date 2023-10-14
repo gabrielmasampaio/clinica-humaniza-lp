@@ -6,7 +6,7 @@ import {faPaperPlane} from "@fortawesome/free-solid-svg-icons";
 import {useState} from "react";
 import {formatScheduleMessage, getWhatsappUrl} from "../../lib/message";
 
-export default function ScheduleForm({}) {
+export default function ScheduleForm() {
 
   const [fullName, setFullName] = useState('');
   const [phoneNumber, setPhoneNumber] = useState();
