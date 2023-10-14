@@ -23,7 +23,7 @@ export default function Schedule(){
             </Link>
           </Tooltip>
           <Tooltip color="foreground" placement="top" content="Instagram" size="sm" delay={100} closeDelay={100}>
-            <Link className="hover:no-underline text-white mx-3" href='/'>
+            <Link className="hover:no-underline text-white mx-3" target="_blank" href='https://www.instagram.com/humaniza_odontologia/'>
               <FontAwesomeIcon icon={faInstagram} bounce />
             </Link>
           </Tooltip>
