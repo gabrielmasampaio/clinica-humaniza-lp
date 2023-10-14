@@ -3,7 +3,7 @@ import {useMemo, useState} from "react";
 
 
 
-export default function EmailInput(){
+export default function EmailInput({onChange}){
   const [value, setValue] = useState("");
 
   const validateEmail = (value) => value.match(/^[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}$/i);
@@ -25,7 +25,8 @@ export default function EmailInput(){
           isInvalid={isInvalid}
           color={isInvalid ? "danger" : "default"}
           errorMessage={isInvalid && "E-mail inválido"}
-          onValueChange={setValue}
+          onValueChange={(value) => {onChange(value)
+            setValue(value)}}
       />
   );
 }

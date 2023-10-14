@@ -3,7 +3,7 @@ import {useState} from "react";
 
 
 
-export default function PhoneInput(){
+export default function PhoneInput({onChange}){
   const [phoneNumber, setPhoneNumber] = useState('');
 
   const formatPhoneNumber = (input) => {
@@ -23,6 +23,7 @@ export default function PhoneInput(){
     const inputValue = e.target.value;
     const formattedValue = formatPhoneNumber(inputValue);
     setPhoneNumber(formattedValue);
+    onChange(formattedValue)
   };
 
   return (
