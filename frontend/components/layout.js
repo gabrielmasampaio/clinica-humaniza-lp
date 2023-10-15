@@ -25,7 +25,7 @@ export default function Layout({ children }) {
         <meta name='og:title' content={siteTitle} />
         <meta name='twitter:card' content='summary_large_image' />
       </Head>
-      <div className="min-w-full">
+      <div className="min-w-full max-h-[15vh]">
         <Image src='/images/white-text-logo.png' width={175} alt="logo"/>
       </div>
       <main className="min-w-full">{children}</main>

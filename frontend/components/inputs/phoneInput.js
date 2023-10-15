@@ -28,7 +28,7 @@ export default function PhoneInput({onChange}){
 
   return (
       <Input
-          className="my-5"
+          className="my-3"
           type="text"
           variant="bordered"
           label="Telefone"

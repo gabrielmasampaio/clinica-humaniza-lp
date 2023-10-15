@@ -17,7 +17,7 @@ export default function EmailInput({onChange}){
 
   return (
       <Input
-          className="my-5"
+          className="my-3"
           value={value}
           type="email"
           label="E-mail"
