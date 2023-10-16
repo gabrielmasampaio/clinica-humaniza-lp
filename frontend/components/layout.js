@@ -5,7 +5,7 @@ export const siteTitle = "Clínica Humaniza";
 
 export default function Layout({ children }) {
   return (
-    <div className="bg-main-dark min-h-[100vh] text-white flex flex-col items-center px-5 text-justify">
+    <div className="bg-main-dark text-white flex flex-col items-center px-5 text-justify">
       <Head>
         <link rel='icon' href='/favicon.ico' />
         <link
@@ -26,7 +26,7 @@ export default function Layout({ children }) {
         <meta name='twitter:card' content='summary_large_image' />
       </Head>
       <div className="min-w-full max-h-[15vh]">
-        <Image src='/images/white-text-logo.png' width={175} alt="logo"/>
+          <Image src='/images/white-text-logo.png' width={175} height={66} alt="logo" />
       </div>
       <main className="min-w-full">{children}</main>
     </div>

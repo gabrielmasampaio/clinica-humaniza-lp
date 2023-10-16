@@ -2,6 +2,8 @@ import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
 import Schedule from "../components/sections/schedule";
 import Comparison from "../components/sections/comparison";
+import TextGrid from "../components/sections/textGrid";
+import TextSidePicture from "../components/sections/textSidePicture";
 
 export default function Home() {
   return (
@@ -14,6 +16,12 @@ export default function Home() {
       </section>
       <section className="flex flex-col items-center mt-4">
         <Comparison/>
+      </section>
+      <section className="flex flex-col items-center mt-4">
+        <TextGrid/>
+      </section>
+      <section className="flex flex-col items-center mt-4">
+        <TextSidePicture/>
       </section>
     </Layout>
   );
