@@ -1,4 +1,4 @@
-const receiverPhoneNumber = "5561985951533"
+const receiverPhoneNumber = "556182681011"
 
 
 const getWhatsappUrl = (message)=> `https://wa.me/${receiverPhoneNumber}?text=${encodeURIComponent(message)}`

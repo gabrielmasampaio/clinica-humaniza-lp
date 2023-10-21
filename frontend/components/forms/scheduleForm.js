@@ -40,7 +40,7 @@ export default function ScheduleForm() {
         </div>
         <div className="mt-6">
           <Input className="my-3" variant="bordered" value={fullName}
-                 onChange={handleFullNameChange} label="Nome Completo" />
+                 onChange={handleFullNameChange} label="Nome Completo (obrigatório)" />
           <PhoneInput onChange={(phone) => setPhoneNumber(phone)} />
           <EmailInput onChange={(email) => setEmail(email)}/>
         </div>
