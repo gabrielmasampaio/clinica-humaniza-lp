@@ -23,6 +23,10 @@ export default function VideoBackground() {
               }
             }
           }}
+          onError={(error) => {
+            console.error("ERROR react player: " + error)
+            setIsLoaded(false)
+          }}
       />
     </div>
   </>)
