@@ -15,6 +15,7 @@ export default function VideoBackground() {
           width="100vw"
           height="120vh"
           controls={false}
+          onReady={() => setIsLoaded(true)}
           config={{
             file: {
               attributes: {
