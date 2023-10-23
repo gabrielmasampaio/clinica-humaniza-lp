@@ -15,7 +15,7 @@ export default function TextGrid(){
   }
 
   return (
-      <div className="flex flex-col min-h-[100vh] mt-5">
+      <div className="flex flex-col min-h-[100vh] mt-5 justify-center items-center">
         <div className="justify-center items-center text-center min-h-[100px] text-2xl">
           {titleText}
         </div>

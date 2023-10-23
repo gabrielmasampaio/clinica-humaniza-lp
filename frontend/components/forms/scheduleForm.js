@@ -2,9 +2,9 @@ import {Button, Input} from "@nextui-org/react";
 import PhoneInput from "../inputs/phoneInput";
 import EmailInput from "../inputs/emailInput";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faPaperPlane} from "@fortawesome/free-solid-svg-icons";
 import {useState} from "react";
 import {formatScheduleMessage, getWhatsappUrl} from "../../lib/message";
+import {faWhatsapp} from "@fortawesome/free-brands-svg-icons";
 
 export default function ScheduleForm() {
 
@@ -45,7 +45,7 @@ export default function ScheduleForm() {
           <EmailInput onChange={(email) => setEmail(email)}/>
         </div>
         <div className="flex justify-center">
-          <Button className="bg-[#cccc33] text-white" onClick={handleSubmit} endContent={<FontAwesomeIcon icon={faPaperPlane}/>}>Enviar contato</Button>
+          <Button className="bg-[#cccc33] text-white" onClick={handleSubmit} endContent={<FontAwesomeIcon size="xl" icon={faWhatsapp}/>}>Entrar em contato</Button>
         </div>
       </div>
   )

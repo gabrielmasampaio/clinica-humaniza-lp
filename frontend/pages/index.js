@@ -10,6 +10,7 @@ import { Skeleton } from '@nextui-org/react';
 import {useEffect, useState} from "react";
 import Head from "next/head";
 import dynamic from 'next/dynamic';
+import ScrollUpButton from "../components/media/scrollUpButton";
 
 const DynamicVideoBackground = dynamic(() => import('../components/media/videoBackground'), {
   ssr: false, // Prevent SSR for this component
@@ -60,10 +61,7 @@ export default function Home() {
       <section className="flex flex-col items-center mt-4 ">
         <TextSidePicture/>
       </section>
-      {showScrollUpButton && <Button size="sm" onClick={() => window.scrollTo({top: document.getElementById("top").offsetTop, behavior: 'smooth'})}
-               href="#top" className="fixed bottom-4 right-4 cursor-pointer">
-        <FontAwesomeIcon icon={faArrowUp}/>
-      </Button>}
+      {showScrollUpButton && <ScrollUpButton />}
     </Layout>
   );
 }
