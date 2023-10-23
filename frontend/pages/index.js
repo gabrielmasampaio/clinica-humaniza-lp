@@ -18,8 +18,6 @@ const DynamicVideoBackground = dynamic(() => import('../components/media/videoBa
 export default function Home() {
 
   const [showScrollUpButton, setShowScrollUpButton] = useState(false);
-  const [videoLoaded, setVideoLoaded] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -47,9 +45,7 @@ export default function Home() {
         <Image src='/images/white-text-logo.png' width={175} height={66} alt="logo" />
       </div>
       <section className="w-full px-5">
-        <DynamicVideoBackground
-            onReady={() => setVideoLoaded(true)}
-        />
+        <DynamicVideoBackground />
         <Schedule/>
       </section>
       <section className="flex flex-col items-center mt-4 px-5">

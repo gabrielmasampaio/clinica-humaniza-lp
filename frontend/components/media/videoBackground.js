@@ -1,9 +1,12 @@
 import ReactPlayer from "react-player";
+import {useState} from "react";
 
 
 export default function VideoBackground() {
-  return (
-      <div className="fixed top-0 mt-[-100px] left-0 w-full h-full z-[-1]">
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  return (<>
+    <div className={`fixed top-0 mt-[-100px] left-0 w-full h-[200vh] z-[-1]  ${!isLoaded ? 'bg-main-dark' : ''}`}>
       <ReactPlayer
           url="/videos/first-background-edited.mp4"
           playing={true}
@@ -21,5 +24,5 @@ export default function VideoBackground() {
           }}
       />
     </div>
-  )
+  </>)
 }
