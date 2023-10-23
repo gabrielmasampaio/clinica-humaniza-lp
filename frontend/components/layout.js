@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { Image } from "@nextui-org/react";
 
 export const siteTitle = "Clínica Humaniza";
 

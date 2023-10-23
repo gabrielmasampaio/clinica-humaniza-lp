@@ -1,4 +1,4 @@
-import {Card, CardBody, CardHeader, Divider} from "@nextui-org/react";
+import {Card, CardBody} from "@nextui-org/react";
 
 
 export default function TextCard({text}){
