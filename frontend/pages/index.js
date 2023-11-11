@@ -42,7 +42,7 @@ export default function Home() {
         <Image src='/images/white-text-logo.png' width={175} height={66} alt="logo" />
       </div>
       <section className="w-full px-5">
-        <DynamicVideoBackground />
+        <DynamicVideoBackground   />
         <Schedule/>
       </section>
       <section className="flex flex-col items-center mt-4 px-5">
@@ -51,7 +51,7 @@ export default function Home() {
       <section className="flex flex-col items-center mt-4 px-5">
         <TextGrid/>
       </section>
-      <section className="flex flex-col items-center mt-4 ">
+      <section className="flex items-center mt-4">
         <TextSidePicture/>
       </section>
       {showScrollUpButton && <ScrollUpButton />}

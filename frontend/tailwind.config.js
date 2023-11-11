@@ -22,13 +22,14 @@ module.exports = {
         'chip-gradient': 'linear-gradient(135deg, hsla(242, 47%, 34%, 1) 24%, hsla(221, 74%, 40%, 1) 42%, hsla(212, 100%, 48%, 1) 73%, hsla(213, 99%, 47%, 1) 89%, hsla(213, 97%, 46%, 1) 96%)',
       },
       textColor: {
-        'light': '#0a0b49'
+        'company-blue': '#003366',
+        'company-yellow': '#cccc33',
+        'company-grey': '#cccccc',
       },
       backgroundColor: {
-        'light': '#0a0b49',
-        'dark': '#FFFEF5',
-        'card-light': '#FFFEF5',
-        'card-dark': '#0C0C0EFF',
+        'company-blue': '#003366',
+        'company-yellow': '#cccc33',
+        'company-grey': '#cccccc',
       },
     },
   },

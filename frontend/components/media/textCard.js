@@ -1,13 +1,26 @@
-import {Card, CardBody} from "@nextui-org/react";
+import {Card, CardBody, CardFooter, CardHeader, Divider} from "@nextui-org/react";
 
 
-export default function TextCard({text}){
+export default function TextCard({headerText, bodyText, footerText}){
 
 
   return(
       <>
         <Card shadow="sm" className="bg-[#003366] text-gray-200 h-[100%]">
-          <CardBody className="text-justify">{text}</CardBody>
+          {headerText &&
+              <>
+                <CardHeader className="uppercase"> {headerText}</CardHeader>
+              </>
+          }
+          <CardBody className="text-justify">{bodyText}</CardBody>
+          {footerText &&
+              <>
+                <Divider className="bg-[#002851]" />
+                <CardFooter>
+                  {footerText}
+                </CardFooter>
+              </>
+          }
         </Card>
       </>
   )

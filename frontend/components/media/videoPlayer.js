@@ -7,9 +7,9 @@ export default function VideoPlayer() {
 
   return (
       <div>
-        <Skeleton isLoaded={isLoaded} className="rounded-lg max-w-[350px]">
+        <Skeleton isLoaded={isLoaded} className="rounded-lg max-h-[90vh] max-w-[400px]">
           <ReactPlayer
-              height="78vh"
+              height="auto"
               width="auto"
               url="/videos/apneia.mp4"
               controls
