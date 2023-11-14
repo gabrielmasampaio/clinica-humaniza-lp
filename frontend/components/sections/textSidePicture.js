@@ -33,7 +33,7 @@ export default function TextSidePicture(){
             <TextCard bodyText={accoladesBodyText()} footerText={accoladesFooterText()}/>
           </div>
           <div className="max-w-[35%]">
-            <Image src="/images/placeholder.jpeg" height="auto" />
+            <Image src="/images/final-image.jpg" height="auto" />
           </div>
         </div>
       </div>
