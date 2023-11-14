@@ -7,7 +7,7 @@ export default function VideoPlayer() {
 
   return (
       <div>
-        <Skeleton isLoaded={isLoaded} className="rounded-lg max-h-[90vh] max-w-[400px]">
+        <Skeleton isLoaded={isLoaded} className="rounded-lg max-h-[78vh] max-w-[400px]">
           <ReactPlayer
               height="auto"
               width="auto"

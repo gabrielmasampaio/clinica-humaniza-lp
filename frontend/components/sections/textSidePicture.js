@@ -1,5 +1,5 @@
 import TextCard from "../media/textCard";
-import {Card, CardBody, CardFooter, Image} from "@nextui-org/react";
+import {Image} from "@nextui-org/react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faAward} from "@fortawesome/free-solid-svg-icons";
 

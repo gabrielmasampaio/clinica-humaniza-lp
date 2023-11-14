@@ -38,10 +38,8 @@ export default function Home() {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <div id="top" className="min-w-full px-5 max-h-[15vh]">
-        <Image src='/images/white-text-logo.png' width={175} height={66} alt="logo" />
-      </div>
       <section className="w-full px-5">
+        <Image src='/images/white-text-logo.png' width={175} height={66} alt="logo" />
         <DynamicVideoBackground   />
         <Schedule/>
       </section>
