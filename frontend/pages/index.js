@@ -38,7 +38,7 @@ export default function Home() {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className="w-full px-5">
+      <section id="top" className="w-full px-5">
         <Image src='/images/white-text-logo.png' width={175} height={66} alt="logo" />
         <DynamicVideoBackground   />
         <Schedule/>
