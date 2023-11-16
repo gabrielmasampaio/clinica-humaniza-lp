@@ -10,8 +10,8 @@ export default function TextSidePicture(){
 
     return(
         <div className="text-xl flex-col justify-between" >
-          {accoladesArray.map(accolade => {
-            return <div className="mb-3 mx-5"> <FontAwesomeIcon icon={faAward} className="mr-2 text-company-yellow" />{accolade}</div>
+          {accoladesArray.map((accolade, index)  => {
+            return <div key={index} className="mb-3 mx-5"> <FontAwesomeIcon icon={faAward} className="mr-2 text-company-yellow" />{accolade}</div>
           })}
         </div>
     )
