@@ -16,8 +16,8 @@ export default function Comparison(){
           </div>
           <div className="flex flex-col w-[25%] justify-evenly p-10 min-h-[100vh] items-center">
             <div className="flex mt-10 flex-col w-[360px] h-[100vh]">
-              <ReactCompareImage sliderLineColor="black"  leftImage="images/sideView-before.jpg" rightImage="images/sideView-after.jpg" />
-              <ReactCompareImage leftImage="images/frontView-before.jpg" rightImage="images/frontView-after.jpg" />
+              <ReactCompareImage sliderLineColor="black"  leftImage="images/sideView-before.JPG" rightImage="images/sideView-after.JPG" />
+              <ReactCompareImage leftImage="images/frontView-before.JPG" rightImage="images/frontView-after.JPG" />
             </div>
           </div>
         </div>
