@@ -1,2 +1,8 @@
+/frontend/public/*.mov filter=lfs diff=lfs merge=lfs -text
+/frontend/public/*.mp4 filter=lfs diff=lfs merge=lfs -text
+/frontend/public/videos/*.mp4 filter=lfs diff=lfs merge=lfs -text
+/frontend/public/videos/*.mov filter=lfs diff=lfs merge=lfs -text
+frontend/public/videos/firstBackground.mov filter=lfs diff=lfs merge=lfs -text
+frontend/public/videos/apneia.mp4 filter=lfs diff=lfs merge=lfs -text
 *.mp4 filter=lfs diff=lfs merge=lfs -text
 *.mov filter=lfs diff=lfs merge=lfs -text
