@@ -39,8 +39,8 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head>
       <section id="top" className="w-full px-5">
-        <Image src='/images/white-text-logo.png' width={175} height={66} alt="logo" />
-        <DynamicVideoBackground   />
+        <Image src='/images/white-text-logo.png' className="max-w-[14vw]" width="100%" height="100%" alt="logo" />
+        <DynamicVideoBackground />
         <Schedule/>
       </section>
       <section className="flex flex-col items-center mt-4 px-5">
