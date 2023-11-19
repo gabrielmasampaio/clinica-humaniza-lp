@@ -3,7 +3,6 @@ import Schedule from "../components/sections/schedule";
 import Comparison from "../components/sections/comparison";
 import TextGrid from "../components/sections/textGrid";
 import TextSidePicture from "../components/sections/textSidePicture";
-import {Image} from "@nextui-org/react";
 import {useEffect, useState} from "react";
 import Head from "next/head";
 import dynamic from 'next/dynamic';
@@ -38,9 +37,8 @@ export default function Home() {
       <Head>
         <title>{siteTitle}</title>
       </Head>
+      <DynamicVideoBackground />
       <section id="top" className="w-full px-5">
-        <Image src='/images/white-text-logo.png' className="max-w-[10vw]" width="100%" height="100%" alt="logo" />
-        <DynamicVideoBackground />
         <Schedule/>
       </section>
       <section className="flex flex-col items-center mt-4 px-5">
