@@ -14,7 +14,7 @@ export default function RedirectIcons(){
 
   return (
       <>
-        <div className="mx-2 flex flex-row justify-center w-1/4 text-2xl">
+        <div className="mx-2 flex flex-row justify-center w-1/4 text-[3vh]">
           <Tooltip color="foreground" placement="top"  content={tooltipContent("Website")} size="sm" delay={100} closeDelay={100}>
             <Link className="hover:no-underline text-white mx-3" href='/'>
               <FontAwesomeIcon icon={faGlobe} bounce />

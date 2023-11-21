@@ -9,14 +9,16 @@ export default function Comparison(){
   ));
 
    return (
-      <div className="flex flex-col min-h-[100vh]">
-        <div className="w-full flex flex-grow flex-row items-center justify-evenly">
-          <div className="flex w-[60%] justify-center ml-8">
-            <TextCard bodyText={formattedText}/>
+      <div className="min-h-[100vh]">
+        <div className="flex flex-grow flex-row items-center justify-evenly">
+          <div className="flex w-3/5 justify-center ml-8">
+            <TextCard className="text-[1vw]" bodyText={formattedText}/>
           </div>
-          <div className="flex flex-col w-[25%] justify-evenly p-10 min-h-[100vh] items-center">
-            <div className="flex mt-10 flex-col w-[360px] h-[100vh]">
+          <div className="flex flex-col  justify-center items-center w-2/5 min-h-[100vh]">
+            <div className="w-1/2">
               <ReactCompareImage sliderLineColor="black"  leftImage="images/sideView-before.JPG" rightImage="images/sideView-after.JPG" />
+            </div>
+            <div className="w-1/2">
               <ReactCompareImage leftImage="images/frontView-before.JPG" rightImage="images/frontView-after.JPG" />
             </div>
           </div>

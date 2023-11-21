@@ -1,11 +1,11 @@
 import {Card, CardBody, CardFooter, CardHeader, Divider} from "@nextui-org/react";
 
 
-export default function TextCard({headerText, bodyText, footerText}){
+export default function TextCard({headerText, bodyText, footerText, className}){
 
 
   return(
-      <>
+      <div className={className}>
         <Card shadow="sm" className="bg-[#003366] text-gray-200 h-[100%]">
           {headerText &&
               <>
@@ -22,6 +22,6 @@ export default function TextCard({headerText, bodyText, footerText}){
               </>
           }
         </Card>
-      </>
+      </div>
   )
 }

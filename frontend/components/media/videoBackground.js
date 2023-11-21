@@ -6,7 +6,7 @@ export default function VideoBackground() {
   const [isLoaded, setIsLoaded] = useState(false);
 
   return (<>
-    <div className={`fixed top-0 left-0 "min-h-full min-w-[177vh] z-[-1] ${!isLoaded ? 'bg-main-dark min-w-full min-h-full' : ''}`}>
+    <div className={`fixed top-0 left-0 w-[2560px] z-[-1] ${!isLoaded ? 'bg-main-dark' : ''}`}>
         <ReactPlayer
             url="/videos/first-background-edited.mp4"
             playing={true}

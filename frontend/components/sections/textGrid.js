@@ -14,8 +14,8 @@ export default function TextGrid(){
   }
 
   return (
-      <div className="flex flex-col min-h-[100vh] items-center">
-        <div className="justify-center items-end text-center min-h-[100px] text-lg">
+      <div className="flex flex-col min-h-[100vh] justify-evenly">
+        <div className="text-center text-2xl">
           {titleText}
         </div>
         <div className="gap-3 grid grid-cols-1 sm:grid-cols-3 text-sm">
