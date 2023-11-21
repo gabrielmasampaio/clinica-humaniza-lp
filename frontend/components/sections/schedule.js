@@ -18,7 +18,7 @@ export default function Schedule(){
           <div className="flex w-1/2 justify-center pt-12">
             <DynamicVideoPlayer />
           </div>
-          <div className="flex flex-col w-1/2 min-h-full items-center">
+          <div className="flex flex-col w-1/2 min-h-full mt-20 items-center">
             <Image className="max-w-[20vw]" src='/images/white-text-logo.png' width="auto" height="auto" alt="logo"  />
             <ScheduleForm />
           </div>
