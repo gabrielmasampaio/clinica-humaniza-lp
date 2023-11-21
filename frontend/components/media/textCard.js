@@ -6,7 +6,7 @@ export default function TextCard({headerText, bodyText, footerText, className}){
 
   return(
       <div className={className}>
-        <Card shadow="sm" className="bg-[#003366] text-gray-200 h-[100%]">
+        <Card shadow="sm" className="bg-main-dark text-gray-200 text-lg h-[100%]">
           {headerText &&
               <>
                 <CardHeader className="uppercase"> {headerText}</CardHeader>
