@@ -13,9 +13,9 @@ const DynamicVideoPlayer = dynamic(() => import('../media/videoPlayer'), {
 export default function Schedule(){
 
   return (
-      <div className="flex flex-col justify-between min-h-[100vh] pt-20">
+      <div className="flex flex-col justify-between min-h-[100vh]">
         <div className="w-full flex flex-grow flex-row h-[75%] justify-center ">
-          <div className="flex w-1/2 justify-center">
+          <div className="flex w-1/2 justify-center pt-12">
             <DynamicVideoPlayer />
           </div>
           <div className="flex flex-col w-1/2 min-h-full items-center">
