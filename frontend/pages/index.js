@@ -38,13 +38,13 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head>
       <DynamicVideoBackground />
-      <section id="top" className="w-full px-5">
+      <section id="top" className="w-full px-5 min-h-[100vh]">
         <Schedule/>
       </section>
-      <section className="flex flex-col items-center mt-4 px-5">
+      <section className="flex flex-col items-center mt-4 px-5 min-h-[100vh]">
         <Comparison/>
       </section>
-      <section className="flex flex-col items-center mt-4 px-5">
+      <section className="flex flex-col items-center mt-4 px-5 min-h-[100vh]">
         <TextGrid/>
       </section>
       <section className="flex items-center mt-4">

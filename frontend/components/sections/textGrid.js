@@ -1,5 +1,5 @@
 import {answers, questions} from "../../lib/texts"
-import TextCard from "../media/textCard";
+import {Accordion, AccordionItem} from "@nextui-org/react";
 export default function TextGrid(){
   const titleText = "Perguntas Frequentes";
 
@@ -14,16 +14,20 @@ export default function TextGrid(){
   }
 
   return (
-      <div className="flex flex-col min-h-[100vh] justify-evenly">
+      <div className="flex flex-col min-h-[100vh] min-w-full py-10">
         <div className="text-center text-2xl">
           {titleText}
         </div>
-        <div className="gap-3 grid grid-cols-1 sm:grid-cols-3 text-sm">
-          {extractedQuestions.map((question, index) => (
-              <div key={index} className="flex-1">
-                <TextCard headerText={question} bodyText={extractedAnswers[index]} />
-              </div>
-          ))}
+        <div className="w-full h-full flex flex-grow justify-center items-center">
+          <div className="w-[100%] max-w-screen-2xl">
+            <Accordion variant="shadow" className="bg-main-dark">
+              {extractedQuestions.map((question, index) => (
+                <AccordionItem  key={index} aria-label={`question ${index}`}  title={<div className="text-white">{question}</div>}>
+                  {extractedAnswers[index]}
+                </AccordionItem>
+                ))}
+            </Accordion>
+          </div>
         </div>
       </div>
   )
