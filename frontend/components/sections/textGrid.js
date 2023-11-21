@@ -20,9 +20,9 @@ export default function TextGrid(){
         </div>
         <div className="w-full h-full flex flex-grow justify-center items-center">
           <div className="w-[100%] max-w-screen-2xl">
-            <Accordion variant="shadow" className="bg-main-dark">
+            <Accordion variant="splitted" >
               {extractedQuestions.map((question, index) => (
-                <AccordionItem  key={index} aria-label={`question ${index}`}  title={<div className="text-white">{question}</div>}>
+                <AccordionItem className="bg-main-dark"  key={index} aria-label={`question ${index}`}  title={<div className="text-white">{question}</div>}>
                   {extractedAnswers[index]}
                 </AccordionItem>
                 ))}
