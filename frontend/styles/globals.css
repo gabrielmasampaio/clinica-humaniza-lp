@@ -12,11 +12,14 @@ body {
   Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   font-size: 1.2vw;
+  scroll-snap-type: y mandatory;
 }
 
 section {
   min-height: 100vh;
   min-width: 100%;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
 * {
