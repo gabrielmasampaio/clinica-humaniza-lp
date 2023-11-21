@@ -1,10 +1,10 @@
 const questions = {
   1: "Como deve ser feita a higiene bucal?",
-  2: "O rosto fica inchado por muito tempo? \n",
-  6: "Quantos dias precisarei ficar de repouso? \n",
-  4: "Como deve ser a alimentação nesse período? \n",
-  5: "Vou sentir dor no pós-operatório? \n",
-  3: "APÓS A CIRURGIA, PRECISAREI DE FISIOTERAPIA OU FONOTERAPIA? \n"
+  2: "O rosto fica inchado por muito tempo?",
+  6: "Quantos dias precisarei ficar de repouso?",
+  4: "Como deve ser a alimentação nesse período?",
+  5: "Vou sentir dor no pós-operatório?",
+  3: "Após a cirurgia, precisarei de fisioterapia ou fonoterapia?"
 }
 const answers = {
   1: "Essa é uma etapa fundamental na recuperação. É muito importante que a higiene bucal seja feita pelo menos 3 vezes ao dia, com escova de cerdas macias e cabeça pequena, evitando atrito e incômodos devido à sensibilidade na face. \n" +
