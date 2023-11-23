@@ -38,7 +38,7 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head>
       <DynamicVideoBackground />
-      <section id="top" className="w-full px-5 min-h-[100vh]">
+      <section  className="w-full px-5 min-h-[100vh]">
         <Schedule/>
       </section>
       <section className="flex flex-col items-center mt-4 px-5 min-h-[100vh]">

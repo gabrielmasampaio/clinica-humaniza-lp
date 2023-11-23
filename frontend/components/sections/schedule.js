@@ -14,12 +14,13 @@ export default function Schedule(){
 
   return (
       <div className="flex flex-col justify-between min-h-[100vh]">
-        <div className="w-full flex flex-grow flex-row h-[75%] justify-center ">
-          <div className="flex w-1/2 justify-center pt-12">
+        <div className={"w-full flex flex-grow h-[75%] justify-center " + ((isVertical) ? "flex-col" : "flex-row")}>
+          <Image hidden={!isVertical} className={"mt-[-15%] mb-[-30%] "} src='/images/white-text-logo.png' width="auto" height="auto" alt="logo"  />
+          <div className={"flex justify-center pt-12 " + ((isVertical) ? " " : " w-1/2 ")}>
             <DynamicVideoPlayer />
           </div>
-          <div  className="flex flex-col w-1/2 min-h-full mt-20 items-center">
-            <Image className="max-w-[20vw]" src='/images/white-text-logo.png' width="auto" height="auto" alt="logo"  />
+          <div id="top" className={"flex flex-col min-h-full items-center " + ((isVertical) ? "my-10" : " mt-20  w-1/2 ")}>
+            <Image hidden={isVertical} className={"max-w-[20vw]"} src='/images/white-text-logo.png' width="auto" height="auto" alt="logo"  />
             <ScheduleForm />
           </div>
         </div>

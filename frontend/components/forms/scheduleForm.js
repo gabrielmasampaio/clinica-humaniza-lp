@@ -5,12 +5,14 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {useState} from "react";
 import {formatScheduleMessage, getWhatsappUrl} from "../../lib/message";
 import {faWhatsapp} from "@fortawesome/free-brands-svg-icons";
+import {useResponsive} from "../providers/context";
 
 export default function ScheduleForm() {
 
   const [fullName, setFullName] = useState('');
   const [phoneNumber, setPhoneNumber] = useState();
   const [email, setEmail] = useState();
+  const { isVertical } = useResponsive();
 
   const handleFullNameChange = (event) => {
     setFullName(event.target.value);
@@ -31,7 +33,7 @@ export default function ScheduleForm() {
 
 
   return (
-      <div className="bg-white p-8 w-[75%] rounded-3xl text-black">
+      <div className={"bg-white p-8 rounded-3xl text-black" + ((isVertical) ? " " : "w-[75%]")}>
         <div>
           <p className="text-xl text-center mb-3">
             Faça o seu <span className="font-bold">agendamento</span>
