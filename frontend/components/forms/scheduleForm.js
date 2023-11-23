@@ -33,7 +33,7 @@ export default function ScheduleForm() {
 
 
   return (
-      <div className={"bg-white p-8 rounded-3xl text-black" + ((isVertical) ? " " : "w-[75%]")}>
+      <div className={"bg-white p-8 rounded-3xl text-black " + ((isVertical) ? " " : "w-[75%]")}>
         <div>
           <p className="text-xl text-center mb-3">
             Faça o seu <span className="font-bold">agendamento</span>

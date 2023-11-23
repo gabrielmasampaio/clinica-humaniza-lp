@@ -7,21 +7,23 @@ import {useEffect, useState} from "react";
 import Head from "next/head";
 import dynamic from 'next/dynamic';
 import ScrollUpButton from "../components/media/scrollUpButton";
+import {useResponsive} from "../components/providers/context";
 
-const DynamicVideoBackground = dynamic(() => import('../components/media/videoBackground'), {
+const DynamicHorizontalVideoBackground = dynamic(() => import('../components/media/horizontalVideoBackground'), {
   ssr: false, // Prevent SSR for this component
 });
 export default function Home() {
 
   const [showScrollUpButton, setShowScrollUpButton] = useState(false);
+  const { isVertical } = useResponsive();
 
   useEffect(() => {
     const handleScroll = () => {
       // Check if the user has scrolled past 100vh
-      if (window.scrollY > window.innerHeight/3) {
-        setShowScrollUpButton(true);
+      if(isVertical){
+        setShowScrollUpButton((window.scrollY > window.innerHeight));
       } else {
-        setShowScrollUpButton(false);
+        setShowScrollUpButton(window.scrollY > window.innerHeight/3);
       }
     };
 
@@ -37,7 +39,7 @@ export default function Home() {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <DynamicVideoBackground />
+      {(!isVertical) ? <DynamicHorizontalVideoBackground /> : <section className="z-[-1] fixed bg-main-dark min-h-[100vh] min-w-[100vw]"></section>}
       <section  className="w-full px-5 min-h-[100vh]">
         <Schedule/>
       </section>

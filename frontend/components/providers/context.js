@@ -9,9 +9,23 @@ export const ResponsiveProvider = ({ children }) => {
         : false;
   });
 
+  const [screenHeight, setScreenHeight] = useState(() => {
+    return typeof window !== 'undefined'
+        ? window.screen.height
+        : false;
+  });
+
+  const [screenWidth, setScreenWidth] = useState(() => {
+    return typeof window !== 'undefined'
+        ? window.screen.width
+        : false;
+  });
+
   useEffect(() => {
     const handleResize = () => {
       setIsVertical(window.innerHeight > window.innerWidth);
+      setScreenHeight(window.screen.height);
+      setScreenWidth(window.screen.width);
     };
 
     window.addEventListener('resize', handleResize);
@@ -22,7 +36,7 @@ export const ResponsiveProvider = ({ children }) => {
   }, []);
 
   return (
-      <ResponsiveContext.Provider value={{ isVertical }}>
+      <ResponsiveContext.Provider value={{ isVertical, screenHeight, screenWidth }}>
         {children}
       </ResponsiveContext.Provider>
   );

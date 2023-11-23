@@ -16,7 +16,7 @@ export default function Schedule(){
       <div className="flex flex-col justify-between min-h-[100vh]">
         <div className={"w-full flex flex-grow h-[75%] justify-center " + ((isVertical) ? "flex-col" : "flex-row")}>
           <Image hidden={!isVertical} className={"mt-[-15%] mb-[-30%] "} src='/images/white-text-logo.png' width="auto" height="auto" alt="logo"  />
-          <div className={"flex justify-center pt-12 " + ((isVertical) ? " " : " w-1/2 ")}>
+          <div className={"flex justify-center  " + ((isVertical) ? "pt-12 " : "pt-20 w-1/2 ")}>
             <DynamicVideoPlayer />
           </div>
           <div id="top" className={"flex flex-col min-h-full items-center " + ((isVertical) ? "my-10" : " mt-20  w-1/2 ")}>
