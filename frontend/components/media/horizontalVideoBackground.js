@@ -8,7 +8,7 @@ export default function HorizontalVideoBackground() {
   const { screenWidth } = useResponsive();
 
   return (<>
-    <div className={`fixed top-0 left-0 z-[-1] w-[${screenWidth}px] ${!isLoaded ? 'bg-main-dark' : ''}`}>
+    <div className={`fixed top-0 left-0 z-[-1]  ${!isLoaded ? 'bg-main-dark' : ''}`} style={{ width: screenWidth+"px" }}>
         <ReactPlayer
             url="/videos/first-background-edited.mp4"
             playing={true}

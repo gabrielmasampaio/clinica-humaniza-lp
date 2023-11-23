@@ -5,10 +5,10 @@ import {useResponsive} from "../providers/context";
 
 export default function VideoPlayer() {
   const [isLoaded, setIsLoaded] = useState(false);
-  const { isVertical } = useResponsive();
+  const { isVertical, screenHeight } = useResponsive();
   return (
       <div>
-        <Skeleton isLoaded={isLoaded} className={`rounded-lg m-auto ${isVertical ? '' : 'w-[50%]'} max-h-[80vh] ${!isLoaded ? ' bg-gray-500' : ''}`}>
+        <Skeleton isLoaded={isLoaded} className={`rounded-lg m-auto ${isVertical ? `h-[${screenHeight}px]` : 'w-[50%]'} max-h-[80vh] ${!isLoaded ? ' bg-gray-500' : ''}`}>
           <ReactPlayer
               height="auto"
               width="auto"

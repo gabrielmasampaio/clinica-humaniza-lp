@@ -39,7 +39,9 @@ export default function Home() {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      {(!isVertical) ? <DynamicHorizontalVideoBackground /> : <section className="z-[-1] fixed bg-main-dark min-h-[100vh] min-w-[100vw]"></section>}
+      {(!isVertical)
+          ? <DynamicHorizontalVideoBackground />
+          : <section className="z-[-1] fixed bg-main-dark min-h-full min-w-[110vw]"></section>}
       <section  className="w-full px-5 min-h-[100vh]">
         <Schedule/>
       </section>

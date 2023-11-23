@@ -17,7 +17,7 @@ export const ResponsiveProvider = ({ children }) => {
 
   const [screenWidth, setScreenWidth] = useState(() => {
     return typeof window !== 'undefined'
-        ? window.screen.width
+        ? window.screen.width/window.screen.height < 1.78 ? Math.floor(window.screen.height*1.78) : window.screen.width
         : false;
   });
 
@@ -25,7 +25,11 @@ export const ResponsiveProvider = ({ children }) => {
     const handleResize = () => {
       setIsVertical(window.innerHeight > window.innerWidth);
       setScreenHeight(window.screen.height);
-      setScreenWidth(window.screen.width);
+      if(window.screen.width/window.screen.height < 1.77){
+        setScreenWidth(Math.floor(window.screen.height*1.78))
+      } else {
+        setScreenWidth(window.screen.width);
+      }
     };
 
     window.addEventListener('resize', handleResize);
