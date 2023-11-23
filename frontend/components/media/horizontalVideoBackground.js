@@ -1,12 +1,14 @@
 import ReactPlayer from "react-player";
 import {useState} from "react";
+import {useResponsive} from "../providers/context";
 
 
-export default function VideoBackground() {
+export default function HorizontalVideoBackground() {
   const [isLoaded, setIsLoaded] = useState(false);
+  const { screenWidth } = useResponsive();
 
   return (<>
-    <div className={`fixed top-0 left-0 w-[2560px] z-[-1] ${!isLoaded ? 'bg-main-dark' : ''}`}>
+    <div className={`fixed top-0 left-0 z-[-1]  ${!isLoaded ? 'bg-main-dark' : ''}`} style={{ width: screenWidth+"px" }}>
         <ReactPlayer
             url="/videos/first-background-edited.mp4"
             playing={true}
